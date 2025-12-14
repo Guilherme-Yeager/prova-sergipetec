@@ -17,7 +17,7 @@
 | id           | Long                           | *  |            |    |      |           |
 | dataInicial  | LocalDateTime                  |    |            |    |      |           |
 | dataFinal    | LocalDateTime                  |    |            |    |      |           |
-| status       | enum("C","A","E","D")          |    |            |    |      | Cancela, Agendada, Em andamento e Concluída |
+| status       | enum("C","A","E","D")          |    |            |    |      | Cancela, agendada, em andamento e concluída. |
 | descricao    | String                         |    |            |    | *    |           |
 | id_servidor  | Long                           |    |            | *  |      |           |
 
@@ -44,7 +44,7 @@
 | id         | Long        | *  |            |    |      |           |
 | valor      | BigDecimal  |    |            |    |      |           |
 | data       | LocalDate   |    |            |    |      |           |
-| tipo       | String      |    |            |    |      |           |
+| tipo       | enum("P", "CC", "CD", "D")        |    |            |    |      | Pix, cartão de crédito, cartão de débito e dinheiro. |
 | descricao  | String      |    |            |    | *    |           |
 | feriasId   | Long        |    |            | *  |      |           |
 
